@@ -26,10 +26,9 @@ const navbar = () => {
 
 
     const handleCerrarSesionAdmin = () => {
-        localStorage.clear()
-        setUserRole(null)
-        window.location.reload();
         navigate('/');
+        localStorage.clear()
+        setUserRole(null)       
     }
 
     
