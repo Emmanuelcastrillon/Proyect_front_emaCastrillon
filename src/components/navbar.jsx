@@ -29,6 +29,7 @@ const navbar = () => {
         localStorage.clear()
         setUserRole(null)
         window.location.reload();
+        navigate('/');
     }
 
     
