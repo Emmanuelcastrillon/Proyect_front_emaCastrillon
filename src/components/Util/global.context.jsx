@@ -23,9 +23,9 @@ const ContextProvider=({children})=>{
     const [updatingCaracteristics, setUpdatingCaracteristics] = useState(false);
 
 
-    const endPointProducts="http://localhost:8080/products/list-products";
-    const endPointCategias="http://localhost:8080/categorias/listar-categorias";
-    const endPointCaracteristicas = "http://localhost:8080/characteristics/list-characteristics";
+    const endPointProducts="https://proyectofinalbackendemmanuel-production.up.railway.app/products/list-products";
+    const endPointCategias="https://proyectofinalbackendemmanuel-production.up.railway.app/categorias/listar-categorias";
+    const endPointCaracteristicas = "https://proyectofinalbackendemmanuel-production.up.railway.app/characteristics/list-characteristics";
 
     useEffect(()=>{
         if(!updatingProductos){

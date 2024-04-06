@@ -7,7 +7,7 @@ import {useNavigate} from 'react-router-dom'
 const FormCrearCuenta = () => {
 
 
-    const endPointRegister="http://localhost:8080/auth/register";
+    const endPointRegister="https://proyectofinalbackendemmanuel-production.up.railway.app/auth/register";
 
     const[usuarioRegistrar, setUsuarioRegistrar]=useState({
         username:"",

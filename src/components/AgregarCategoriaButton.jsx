@@ -48,7 +48,7 @@ const AgregarCategoriaButton = () => {
       
 
         try {
-            const response = await axios.post('http://localhost:8080/categorias/add-categoria', categoriaData);
+            const response = await axios.post('https://proyectofinalbackendemmanuel-production.up.railway.app/categorias/add-categoria', categoriaData);
             dispatch({ type: 'agregar_categoria', payload: response.data });
             setShowForm(false); // Cierra el pop-up después de agregar la categoría
             Swal.fire({

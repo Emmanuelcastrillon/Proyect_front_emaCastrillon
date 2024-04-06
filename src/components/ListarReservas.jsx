@@ -14,7 +14,7 @@ const ListarReservas = () => {
         const busqueda = async () => {
           try {
            
-            const respuesta=await axios.get('http://localhost:8080/booking/list-bookings')
+            const respuesta=await axios.get('https://proyectofinalbackendemmanuel-production.up.railway.app/booking/list-bookings')
                 if(respuesta.status===200){
                     setReservas(respuesta.data)
                     console.log(respuesta.data)    

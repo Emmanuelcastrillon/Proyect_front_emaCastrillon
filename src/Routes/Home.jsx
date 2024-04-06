@@ -89,7 +89,7 @@ const Home = () => {
   const handleCategoryAventura = () => {
     state.productos.map((producto) => {
       if (producto.category?.title === "aventura") {
-        axios.get(`http://localhost:8080/products/search-category/aventura`)
+        axios.get(`https://proyectofinalbackendemmanuel-production.up.railway.app/products/search-category/aventura`)
           .then((response) => {
             setStateNuevos({ ...estadosNuevos, productosDeUnaCategoria: response.data, buscar: true,buscarPorFechas:false });
             console.log(response.data)
@@ -108,7 +108,7 @@ const Home = () => {
   const handleCategoryDeportes = () => {
     state.productos.map((producto) => {
       if (producto.category?.title === "Deportes") {
-        axios.get(`http://localhost:8080/products/search-category/Deportes`)
+        axios.get(`https://proyectofinalbackendemmanuel-production.up.railway.app/products/search-category/Deportes`)
           .then((response) => {
             setStateNuevos({ ...estadosNuevos, productosDeUnaCategoria: response.data, buscar: true,buscarPorFechas:false });
             console.log(response.data)
@@ -127,7 +127,7 @@ const Home = () => {
   const handleCategoryInfantil = () => {
     state.productos.map((producto) => {
       if (producto.category?.title === "Infantil") {
-        axios.get(`http://localhost:8080/products/search-category/Infantil`)
+        axios.get(`https://proyectofinalbackendemmanuel-production.up.railway.app/products/search-category/Infantil`)
           .then((response) => {
             setStateNuevos({ ...estadosNuevos, productosDeUnaCategoria: response.data, buscar: true,buscarPorFechas:false });
             console.log(response.data)
@@ -146,7 +146,7 @@ const Home = () => {
   const handleCategoryTerror = () => {
     state.productos.map((producto) => {
       if (producto.category?.title === "terror") {
-        axios.get(`http://localhost:8080/products/search-category/terror`)
+        axios.get(`https://proyectofinalbackendemmanuel-production.up.railway.app/products/search-category/terror`)
           .then((response) => {
             setStateNuevos({ ...estadosNuevos, productosDeUnaCategoria: response.data, buscar: true,buscarPorFechas:false });
             console.log(response.data)
@@ -167,7 +167,7 @@ const Home = () => {
     e.preventDefault();
     state.productos.map((producto) => {
       if (producto.category?.title === estadosNuevos.categoriaSeleccionada) {
-        axios.get(`http://localhost:8080/products/search-category/${estadosNuevos.categoriaSeleccionada}`)
+        axios.get(`https://proyectofinalbackendemmanuel-production.up.railway.app/products/search-category/${estadosNuevos.categoriaSeleccionada}`)
           .then((response) => {
             setStateNuevos({ ...estadosNuevos, productosDeUnaCategoria: response.data, buscar: true,buscarPorFechas:false });
           })
@@ -216,7 +216,7 @@ const Home = () => {
     console.log(estadosFechas)
 
     axios
-      .post(`http://localhost:8080/booking/list-productos-disponibles`, estadosFechas)
+      .post(`https://proyectofinalbackendemmanuel-production.up.railway.app/booking/list-productos-disponibles`, estadosFechas)
       .then((response) => {
         const productosFiltradosConPalabra= response.data.filter(juego => juego.name.toLowerCase().includes(estadosNuevos.palabraEnElInputBuscador.toLowerCase()))
         setStateNuevos({ ...estadosNuevos, productosDisponiblesPorFecha: productosFiltradosConPalabra, buscarPorFechas: true, buscar:false }, () => {
@@ -242,7 +242,7 @@ const Home = () => {
    useEffect(()=>{
     if(usuario!=null){
       try {
-        axios.get("http://localhost:8080/favorite/listar-favoritos-usuario/" + usuario )
+        axios.get("https://proyectofinalbackendemmanuel-production.up.railway.app/favorite/listar-favoritos-usuario/" + usuario )
         .then((response)=>{
           console.log("Favoritos del usuario desde el back",response.data)
           dispatch({ type: 'get_favorites', payload: response.data })

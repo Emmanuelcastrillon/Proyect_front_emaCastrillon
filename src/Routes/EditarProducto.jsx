@@ -14,7 +14,7 @@ const EditarProducto = () => {
 
   const navigate = useNavigate();
 
-  const endPointDetail=`http://localhost:8080/products/search-id/${params.id}`
+  const endPointDetail=`https://proyectofinalbackendemmanuel-production.up.railway.app/products/search-id/${params.id}`
 
   console.log(params.id)
 
@@ -112,7 +112,7 @@ const handleSubmit= async(e)=>{
       }
       else{
           console.log(productoActualizar)
-          const response = await axios.put('http://localhost:8080/products/update-product', productoActualizar);
+          const response = await axios.put('https://proyectofinalbackendemmanuel-production.up.railway.app/products/update-product', productoActualizar);
           console.log(response);
           setEstados((prevState)=>({
               ...prevState,

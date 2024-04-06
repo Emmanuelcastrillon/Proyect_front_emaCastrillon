@@ -11,7 +11,7 @@ function ListarUsuarios() {
     // Función para obtener la lista de usuarios
     const fetchUsers = async () => {
       try {
-        const response = await axios.get('http://localhost:8080/auth/listar-usuarios');
+        const response = await axios.get('https://proyectofinalbackendemmanuel-production.up.railway.app/auth/listar-usuarios');
         if (response.status === 200) {
           setUsers(response.data);
         }
@@ -40,7 +40,7 @@ function ListarUsuarios() {
       const updatedUser = { username: username, role: newRole };
       console.log(updatedUser);
       console.log(newRole);
-      const response = await axios.put('http://localhost:8080/auth/changeRol', updatedUser);
+      const response = await axios.put('https://proyectofinalbackendemmanuel-production.up.railway.app/auth/changeRol', updatedUser);
       if (response.status === 200) {
         Swal.fire({
           title: 'Rol cambiado',

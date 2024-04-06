@@ -60,10 +60,10 @@ function Card({product}) {
           confirmButtonText: "Yes, delete it!"
         }).then((result) => {
           if (result.isConfirmed) {
-            axios.delete(`http://localhost:8080/favorite/delete-favorite`, { data: productoFavorito })
+            axios.delete(`https://proyectofinalbackendemmanuel-production.up.railway.app/favorite/delete-favorite`, { data: productoFavorito })
             .then((response)=>{
               console.log(response.data)
-              axios.get("http://localhost:8080/favorite/listar-favoritos-usuario/" + usuario )
+              axios.get("https://proyectofinalbackendemmanuel-production.up.railway.app/favorite/listar-favoritos-usuario/" + usuario )
               .then((response)=>{
                 console.log("Favoritos del usuario desde el back",response.data)
                 dispatch({ type: 'get_favorites', payload: response.data }) 
@@ -90,11 +90,11 @@ function Card({product}) {
     else{
      
       try {
-        axios.post(`http://localhost:8080/favorite/add-favorite`, productoFavorito)
+        axios.post(`https://proyectofinalbackendemmanuel-production.up.railway.app/favorite/add-favorite`, productoFavorito)
         .then((response)=>{
           console.log(response.data)
           Swal.fire("has been added to favorites");
-          axios.get("http://localhost:8080/favorite/listar-favoritos-usuario/" + usuario )
+          axios.get("https://proyectofinalbackendemmanuel-production.up.railway.app/favorite/listar-favoritos-usuario/" + usuario )
           .then((response)=>{
             console.log("Favoritos del usuario desde el back",response.data)
             dispatch({ type: 'get_favorites', payload: response.data })

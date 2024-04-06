@@ -32,7 +32,7 @@ const Detail = () => {
    // Estado para almacenar las calificaciones del producto
    const[calificacionesDelProducto, setCalificacionesDelProducto]=useState([])
 
-  const endPointDetail=`http://localhost:8080/products/search-id/${params.id}`
+  const endPointDetail=`https://proyectofinalbackendemmanuel-production.up.railway.app/products/search-id/${params.id}`
   
   console.log(params.id)
 
@@ -74,7 +74,7 @@ const handleOcultar=()=>{
 //UseEffect para llamar la api que devuelve las fechas en la que ese producto esta reservado
 
 useEffect(() => {
-  axios.get("http://localhost:8080/booking/disponibilidadXProducto/" + params.id)
+  axios.get("https://proyectofinalbackendemmanuel-production.up.railway.app/booking/disponibilidadXProducto/" + params.id)
       .then(res => {
           const formattedReservas = res.data.map(item => ({
               fechaInicio: new Date(item.inicio[0], item.inicio[1] - 1, item.inicio[2]),
@@ -111,7 +111,7 @@ const fechasBloqueadas = reservas.flatMap(reserva => {
 
 useEffect(()=>{
     try {
-        axios.get("http://localhost:8080/calificaciones/calificacionDeUnProducto/" + params.id)
+        axios.get("https://proyectofinalbackendemmanuel-production.up.railway.app/calificaciones/calificacionDeUnProducto/" + params.id)
         .then((response)=>{
             console.log("Respuesta del backend listado de calificaciones del usuario logueado",response.data)
             setCalificacionesDelProducto(response.data)
@@ -218,7 +218,7 @@ const bookingAEnviar={
 const handleOnclickHacerReserva= async()=>{
     try {
       setMostrarSpinner(true);
-      const response= await axios.post(`http://localhost:8080/booking/add-booking`, bookingAEnviar 
+      const response= await axios.post(`https://proyectofinalbackendemmanuel-production.up.railway.app/booking/add-booking`, bookingAEnviar 
      )
      Swal.fire("¡Reservado!", "Tu reservada ha sido guardada.", "success");
       console.log(response.data)

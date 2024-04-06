@@ -42,7 +42,7 @@ const [comentarioCalificacion, setComentarioCalificacion]=useState()
 
 useEffect(()=>{
     try {
-        axios.get("http://localhost:8080/calificaciones/calificacionDeUnProducto/" + params.id)
+        axios.get("https://proyectofinalbackendemmanuel-production.up.railway.app/calificaciones/calificacionDeUnProducto/" + params.id)
         .then((response)=>{
             console.log("Respuesta del backend listado de calificaciones del usuario logueado",response.data)
             setCalificacionesDelProducto(response.data)
@@ -93,7 +93,7 @@ const handleOnclickCalificacion = async () => {
     }
     else{
         try {
-            const response = await axios.post('http://localhost:8080/calificaciones/calificar', {
+            const response = await axios.post('https://proyectofinalbackendemmanuel-production.up.railway.app/calificaciones/calificar', {
             username: localStorage.getItem("username"),
             productoId: params.id,
             valorCalificacion: calificacion,

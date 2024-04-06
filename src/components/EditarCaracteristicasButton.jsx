@@ -16,7 +16,7 @@ const EditarCaracteristicaButton = ({ caracteristicaId, show, handleClose }) => 
         const fetchCaracteristica = async () => {
             try {
                 console.log(caracteristicaId)
-                const response = await axios.get(`http://localhost:8080/characteristics/search-id/${caracteristicaId}`);
+                const response = await axios.get(`https://proyectofinalbackendemmanuel-production.up.railway.app/characteristics/search-id/${caracteristicaId}`);
                 console.log(response.data)
                 setCaracteristicaData(response.data);
             } catch (error) {
@@ -39,7 +39,7 @@ const EditarCaracteristicaButton = ({ caracteristicaId, show, handleClose }) => 
     const handleEditSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.put('http://localhost:8080/characteristics/update', caracteristicaData);
+            await axios.put('https://proyectofinalbackendemmanuel-production.up.railway.app/characteristics/update', caracteristicaData);
             dispatch({ type: 'update_caracteristica', payload: caracteristicaData });
             handleClose();
             Swal.fire({

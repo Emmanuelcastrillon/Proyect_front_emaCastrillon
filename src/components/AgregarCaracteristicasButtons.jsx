@@ -36,8 +36,8 @@ const AgregarCaracteristicaButton = () => {
         }
         
         try {
-            const response = await axios.post('http://localhost:8080/characteristics/add-characteristic', caracteristicaData);
-            const newResponse = await axios.get('http://localhost:8080/characteristics/search-name/'+caracteristicaData.name);
+            const response = await axios.post('https://proyectofinalbackendemmanuel-production.up.railway.app/characteristics/add-characteristic', caracteristicaData);
+            const newResponse = await axios.get('https://proyectofinalbackendemmanuel-production.up.railway.app/characteristics/search-name/'+caracteristicaData.name);
             dispatch({ type: 'agregar_caracteristica', payload: newResponse.data });
             setShowForm(false); // Cierra el pop-up después de agregar la característica
             Swal.fire({

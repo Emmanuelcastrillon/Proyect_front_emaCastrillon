@@ -49,7 +49,7 @@ function FoormAddProduct() {
                 }
                 else{
                     console.log(productoNuevo)
-                    const response = await axios.post('http://localhost:8080/products/add-product', productoNuevo);
+                    const response = await axios.post('https://proyectofinalbackendemmanuel-production.up.railway.app/products/add-product', productoNuevo);
                     console.log(response);
                     setTimeout(()=>{
                         window.location.reload()

@@ -13,7 +13,7 @@ const ListarCaracteristicasAdmin = () => {
     const [editingCaracteristicaId, setEditingCaracteristicaId] = useState(null);
 
     // Endpoint para eliminar característica
-    const endPointDeleteCaracteristica = `http://localhost:8080/characteristics/delete/`;
+    const endPointDeleteCaracteristica = `https://proyectofinalbackendemmanuel-production.up.railway.app/characteristics/delete/`;
 
     const handleDelete = async (id) => {
         try {

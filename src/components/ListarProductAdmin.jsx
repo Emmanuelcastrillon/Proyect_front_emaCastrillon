@@ -12,7 +12,7 @@ function ListarProductAdmin() {
 
     const {state,dispatch}=useContextGlobal()
 
-    const endPointDeleteProduct=`http://localhost:8080/products/delete-product/`
+    const endPointDeleteProduct=`https://proyectofinalbackendemmanuel-production.up.railway.app/products/delete-product/`
 
     useEffect(()=>{
 

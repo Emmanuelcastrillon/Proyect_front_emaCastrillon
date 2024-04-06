@@ -17,7 +17,7 @@ const FormLogin = () => {
 
    const favoritosJson=JSON.stringify(favoritos)
 
-    const endPointLogin="http://localhost:8080/auth/login";
+    const endPointLogin="https://proyectofinalbackendemmanuel-production.up.railway.app/auth/login";
 
      // Función para decodificar el token JWT
 //  const parseJwt = (token) => {

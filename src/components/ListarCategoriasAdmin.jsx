@@ -14,7 +14,7 @@ const ListarCategoriasAdmin = () => {
     const [editingCategoriaId, setEditingCategoriaId] = useState(null);
 
     // Logica para eliminar categoria
-    const endPointDeleteCategoria = `http://localhost:8080/categorias/delete-category/`;
+    const endPointDeleteCategoria = `https://proyectofinalbackendemmanuel-production.up.railway.app/categorias/delete-category/`;
 
     const handleDelete = async (id) => {
         try {
