@@ -153,7 +153,7 @@ const handleClickVerReserva=()=>{
     if(localStorage.getItem("username")===null){
       Swal.fire({
         title: "El usuario debe estar logueado para realizar una reserva",
-        text: "Realiza primero el loguin",
+        text: "Realiza primero el login",
         icon: "error",
         confirmButtonColor: "#ff00008f",
         customClass: {
@@ -298,7 +298,7 @@ const handleOnclickHacerReserva= async()=>{
            <h3 className="categoriaProducto">Categoria: <span>{state.producto.category? state.producto.category.title : "Sin categoria"}</span></h3>
            <h3 className="descripcionProducto">Descripcion: <span>{state.producto.description}</span></h3>
            <h3 className="precioProducto">Precio: <span>{state.producto.price} USD</span></h3>
-           <h3 className="categoriaProducto">Calificacion total: <span>{state.producto.promedioCalificaciones}</span></h3>
+           <h3 className="categoriaProducto">Calificación total: <span>{Math.ceil(state.producto.promedioCalificaciones)}</span></h3>
            <div className="comparteRedes">
             <CompartirPorRedes location={`${ipAddress}/Detail/${params.id}`} />
           </div>

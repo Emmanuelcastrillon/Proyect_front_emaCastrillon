@@ -307,6 +307,7 @@
 .inputSearch:focus{
   outline: none;
 }
+
 .botonBuscar{
   width: 3vw;
   height: 3vh;
@@ -543,6 +544,9 @@ a{
   border-radius: 5px;
   border: none;
   background-color: #6269d3;
+}
+.botonPaginadoAtras2{
+  display: none;
 }
 
 
@@ -1622,7 +1626,7 @@ text-align: center;
   margin: 1vh 3vw 0vh 0vw;
 }
 .bx-search-alt{
-  font-size: 3.5vw;
+  font-size: 3vw;
 }
 
 /********************Carrusel****************/
@@ -2015,7 +2019,7 @@ font-size: 1.5vw;
   margin: 0.7vh 3vw 0vh 0vw;
 }
 .bx-search-alt{
-  font-size: 5vw;
+  font-size: 4vw;
 }
 
 /********************Carrusel****************/
