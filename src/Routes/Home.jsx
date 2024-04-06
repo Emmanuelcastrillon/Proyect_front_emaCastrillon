@@ -70,7 +70,7 @@ const Home = () => {
   const handleCategoryAccion = () => {
     state.productos.map((producto) => {
       if (producto.category?.title === "accion") {
-        axios.get(`http://localhost:8080/products/search-category/accion`)
+        axios.get(`https://proyectofinalbackendemmanuel-production.up.railway.app/products/search-category/accion`)
           .then((response) => {
             setStateNuevos({ ...estadosNuevos, productosDeUnaCategoria: response.data, buscar: true,buscarPorFechas:false });
             console.log(response.data)
@@ -460,7 +460,7 @@ const Home = () => {
 
               <div className="carousel-item active">
               {state.productos && state.productos.length > 0 && state.productos[0].images && state.productos[0].images.length > 0 && (
-                <img src={state.productos[10].images[0].imageUrl} className="d-block w-100 imageCarrusel" alt="sonic" />
+                <img src={state.productos[2].images[0].imageUrl} className="d-block w-100 imageCarrusel" alt="sonic" />
               )}
               </div>
               
