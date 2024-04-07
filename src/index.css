@@ -1465,6 +1465,7 @@ text-align: center;
   }
   .themeLight:hover,
   .themeDark:hover{
+    text-align: center;
   height: 7vh;
 }
   .contenedorAvatar{
