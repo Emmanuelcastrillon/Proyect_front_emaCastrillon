@@ -1465,7 +1465,7 @@ text-align: center;
   }
   .themeLight:hover,
   .themeDark:hover{
-  height: 100%;
+  height: 20vh;
 }
   .contenedorAvatar{
     width: 10vw;
@@ -1930,6 +1930,10 @@ font-size: 1.5vw;
   .contenedorAvatar{
     display: none;
   }
+  .themeLight:hover,
+  .themeDark:hover{
+  height: 95%;
+}
 
   /************************************Footer***********************************/
   
