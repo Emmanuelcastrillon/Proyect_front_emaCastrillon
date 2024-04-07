@@ -1427,7 +1427,7 @@ text-align: center;
 /***********************************Header****************************************/
 @media(max-width:900px){
   .Header{
-    height: 16vh;
+    height: 18vh;
   }
   .contenedorLogo{
     width: 32vw;
@@ -1573,7 +1573,7 @@ text-align: center;
 /********************************Buscador Fechas***************************/
 
 .containerBuscadorFechas{
- 
+  height: 4%;
   width: 80%;
   font-size: 1.7vw;
 }
