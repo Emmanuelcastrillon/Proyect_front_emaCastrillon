@@ -1427,7 +1427,7 @@ text-align: center;
 /***********************************Header****************************************/
 @media(max-width:900px){
   .Header{
-    height: 21vh;
+    height: 16vh;
   }
   .contenedorLogo{
     width: 32vw;
