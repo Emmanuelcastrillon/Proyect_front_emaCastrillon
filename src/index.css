@@ -1451,7 +1451,7 @@ text-align: center;
   }
   .crear-cuenta,.iniciar-sesion{
     width: 22vw;
-    height: 4.5vh;
+    height: 5.5vh;
     margin: 0.5vh 0vw 0vh 0vw;
     font-size: 2vw;
   }
@@ -1896,7 +1896,9 @@ font-size: 1.5vw;
 /***********************************Header****************************************/
 
 @media(max-width:480px){
-
+  .Header{
+    height: 20vh;
+  }
   .imagenLogo{
     width: 30vw;
     height: 8vh;
