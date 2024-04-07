@@ -1899,7 +1899,7 @@ font-size: 1.5vw;
 /***********************************Header****************************************/
 
 @media(max-width:480px){
-  .header{
+  .Header{
     height: 16vh;
   }
   .imagenLogo{
