@@ -1854,6 +1854,7 @@ font-size: 1.5vw;
 }
 .textExito{
   font-size: 1.3vw;
+  width: 70vh;
   height: 45vh;
 }
 .textFalla,.textFallaServer{
@@ -2263,7 +2264,8 @@ font-size: 2.5vw;
 }
 .textExito{
   font-size: 1.5vw;
-  height: 30vh;
+  width: 80vw;
+  height: 60vh;
 }
 .textFalla,.textFallaServer{
   font-size: 2.5vw;
