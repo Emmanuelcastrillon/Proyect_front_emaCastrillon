@@ -1639,7 +1639,7 @@ text-align: center;
 
 .contenedorCarrusel{
   width: 50vw;
-  height: 37vh;
+  height: 50vh;
   margin: 4vh 0vw 0vh 0vw;
 }
 .tituloCarrusel{
@@ -2043,6 +2043,7 @@ font-size: 1.5vw;
 
 .contenedorCarrusel{
   width: 58vw;
+  height: 20vh;
   margin: 4vh 0vw 0vh 0vw;
 }
 .tituloCarrusel{
