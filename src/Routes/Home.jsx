@@ -410,7 +410,7 @@ const Home = () => {
             dateFormat="yyyy-MM-dd"
             type="date"
             value={estadosFechas.inicio}
-            placeholderText="Fecha de inicio"
+            placeholderText="Fecha inicio"
             minDate={new Date()} // Establece la fecha mínima seleccionable como hoy
           />
           <div className="calendarioUnoline"></div>
@@ -421,7 +421,7 @@ const Home = () => {
             dateFormat="yyyy-MM-dd"
             type="date"
             value={estadosFechas.fin}
-            placeholderText="Fecha de fin"
+            placeholderText="Fecha fin"
             minDate={new Date()} // Establece la fecha mínima seleccionable como hoy
           />
           <div className="calendarioDosline"></div>
