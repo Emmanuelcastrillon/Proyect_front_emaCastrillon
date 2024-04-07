@@ -1683,16 +1683,16 @@ text-align: center;
 }
 .card{
   width: 28vw;
-  height: 50vh;
+  height: 35vh;
 }
 .imageProduct{
   width: 28vw;
-  height: 15vh;
+  height: 20vh;
 }
 .DescriptionProduct{
   height: 5vh;
   text-align: center;
-  font-size: 1.2vw;
+  font-size: 1.4vw;
   margin: 1vh 0vw 0vh 0vw;
 }
 a{
