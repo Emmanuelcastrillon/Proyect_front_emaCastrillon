@@ -1603,7 +1603,7 @@ text-align: center;
   margin: 0.2vh 0.5vw 0vh 0vw;
 }
 .inputline,.calendarioUnoline,.calendarioDosline {
-  margin: 1vh 0vw 0vh 0vw;
+  margin: 0vh 0vw 0vh 0vw;
   margin-right: 10px; /* Espacio entre la línea y los calendarios */
 }
 
