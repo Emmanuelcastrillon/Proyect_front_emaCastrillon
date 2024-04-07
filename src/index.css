@@ -1576,6 +1576,8 @@ text-align: center;
   height: 4%;
   width: 80%;
   font-size: 1.7vw;
+  align-items: center;
+  margin: 2vh 0vw 0vh 0vw;
 }
 .inputTextoBuscador{
  
