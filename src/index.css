@@ -1620,12 +1620,12 @@ text-align: center;
 
 .formularioBuscador{
   height: 4%;
-  width: 40vw;
+  width: 30vw;
   margin: 4vh 0vw 0vh 0vw;
   align-items: center;
 }
 .inputSearch{
-  width: 30vw;
+  width: 25vw;
   font-size: 1.7vw;
 }
 .botonBuscar{
