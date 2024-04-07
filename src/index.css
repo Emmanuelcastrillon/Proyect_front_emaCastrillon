@@ -1462,7 +1462,7 @@ text-align: center;
   .themeLight,.themeDark{
     height: 80%;
     margin: 0.5vh 0vw 0vh 0.5vw;
-    padding: 0vh 0.4vw 0vh 0vw;
+    padding: 0vh 0.3vw 0vh 0vw;
   }
   .themeLight:hover,
   .themeDark:hover{
