@@ -456,7 +456,7 @@
 }
 .carousel-item img {
   width: 30vw;
-  height: 40vh;
+  height: 30vh;
   border-radius: 10px; 
 }
 .imageCarrusel{
@@ -1655,7 +1655,7 @@ text-align: center;
 
 .carousel-inner{
   width: 44vw;
-  height: 20vh;
+  height: 30vh;
   margin: 1vh 0vw 0vh 3vw;
 }
 
