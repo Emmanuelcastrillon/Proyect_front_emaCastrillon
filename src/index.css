@@ -1156,7 +1156,7 @@ text-align: center;
 .textExito{
   font-size: 1.2vw;
   height: 55vh;
-  width: 25vw;
+  /* width: 25vw; */
   color:#6269d3;
   bottom:6vh;
 }
