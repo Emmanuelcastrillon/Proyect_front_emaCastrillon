@@ -1579,7 +1579,6 @@ text-align: center;
   align-items: center;
 }
 .inputTextoBuscador{
- 
   margin: 0vh 0vw 0vh 0vw;
 }
 
@@ -1618,9 +1617,10 @@ text-align: center;
 }
 
 .formularioBuscador{
+  height: 4%;
   width: 40vw;
   margin: 4vh 0vw 0vh 0vw;
-
+  align-items: center;
 }
 .inputSearch{
   width: 30vw;
