@@ -2008,11 +2008,8 @@ font-size: 1.5vw;
   background-color: #000;
   margin-right: 7px; /* Espacio entre la línea y los calendarios */
 }
-.inputline{
-  margin: 1vh 0vw 0vh 0vw;
-}
 .calendarioUnoline{
-  margin: 1vh 0vw 0vh 2vw;
+  margin: 0vh 0vw 0vh 2vw;
 }
 
 /********************Buscador****************/
