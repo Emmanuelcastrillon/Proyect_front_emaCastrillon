@@ -2004,7 +2004,7 @@ font-size: 1.5vw;
 .inputline,.calendarioUnoline,.calendarioDosline {
   width: 1px;
   height: 60%;
-  margin: 0.5vh 0vw 0vh 0vw;
+  margin: 0vh 0vw 0vh 0vw;
   background-color: #000;
   margin-right: 7px; /* Espacio entre la línea y los calendarios */
 }
