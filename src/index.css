@@ -70,7 +70,7 @@
   color: black;
 }
 .themeLight,.themeDark{
-  width: 35px;
+  width: 40px;
   height: 95%;
   border: none;
   background-color:transparent;
@@ -1461,7 +1461,7 @@ text-align: center;
   }
   .themeLight,.themeDark{
     height: 80%;
-    margin: 0.5vh 0vw 0vh 1vw;
+    margin: 0.5vh 0vw 0vh 0vw;
   }
   .themeLight:hover,
   .themeDark:hover{
