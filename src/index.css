@@ -461,6 +461,7 @@
 }
 .imageCarrusel{
   width: 2vw;
+  height: 80%;
 }
 .carousel-control-next{
   width: 9vw;
