@@ -1427,7 +1427,7 @@ text-align: center;
 /***********************************Header****************************************/
 @media(max-width:900px){
   .Header{
-    height: 18vh;
+    height: 21vh;
   }
   .contenedorLogo{
     width: 32vw;
@@ -1914,6 +1914,7 @@ font-size: 1.5vw;
   .crear-cuenta,.iniciar-sesion{
     font-size: 3vw;
     width: 25vw;
+    height: 4.5vh;
     margin: 0.5vh 0vw 0vh 2vw;
   }
   .contenedorAvatar{
