@@ -1463,6 +1463,10 @@ text-align: center;
     height: 80%;
     margin: 0.5vh 0vw 0vh 1vw;
   }
+  .themeLight:hover,
+  .themeDark:hover{
+  height: 100%;
+}
   .contenedorAvatar{
     width: 10vw;
     height: 10vh;
@@ -1660,10 +1664,10 @@ text-align: center;
 }
 
 .carousel-control-prev{
-  margin: 15.5vh 0vw 0vh -1.5vw;
+  margin: 18vh 0vw 0vh -1.5vw;
 }
 .carousel-control-next{
-  margin: 14vh -13vw 0vh 0vw;
+  margin: 18vh -13vw 0vh 0vw;
 }
 
 /********************Productos****************/
