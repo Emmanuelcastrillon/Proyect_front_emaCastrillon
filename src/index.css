@@ -1583,6 +1583,7 @@ text-align: center;
 }
 
 .calendarioUno{
+  height: 4%;
   margin: 0vh 0vw 0vh 0vw;
   width: 100%;
 }.calendarioUno:focus{
@@ -1595,7 +1596,7 @@ text-align: center;
 .calendarioDos{
   margin: 0vh 0vw 0vh 1vw;
   width: 80%;
- 
+  height: 4%;
 }
 .botonBuscarFechas{
   width: 40px;
