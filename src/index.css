@@ -1500,7 +1500,9 @@ text-align: center;
    }
   
   /************************************Footer***********************************/
-  
+  .piePagina{
+    height: 21vh;
+  }
   .derechos{
     width: 30vw; 
     margin: 5vh 0vw 0vh 5vw;
@@ -1563,7 +1565,7 @@ text-align: center;
   }
   .img1CategoriaUno,.img2CategoriaUno,.img1CategoriaDos,.img2CategoriaDos,.img1CategoriaTres,.img2CategoriaTres,.img1CategoriaCuatro,.img2CategoriaCuatro,.img1CategoriaCinco,.img2CategoriaCinco{
     width: 26vw;
-    height: 20vh;
+    height: 23vh;
     margin: 1.5vh 0vw 0vh 0vw;
   }
   .img1CategoriaUno:hover,
@@ -1940,7 +1942,9 @@ font-size: 1.5vw;
 }
 
   /************************************Footer***********************************/
-  
+  .piePagina{
+    height: 16vh;
+  }
   
   .circuloFooter{
     width: 17px;
